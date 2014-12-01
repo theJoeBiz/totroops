@@ -3,25 +3,6 @@
 {% block title %}ToTroops.com - Care packages for service members.{% endblock %}
 
 {% block content %}
-  <div style="position:fixed;top:0;left:0;background:white;padding:10px 20px;z-index:1000;">
-    <span class="visible-xs">XS</span>
-    <span class="visible-sm">SM</span>
-    <span class="visible-md">MD</span>
-    <span class="visible-lg">LG</span>
-    <span id="pixels"></span>
-  </div>
-  
-  <script type="text/javascript">
-    var pixels = document.getElementById('pixels');
-
-    function setPixels() {
-      pixels.innerHTML = window.outerWidth + 'px';
-    }
-    setPixels();
-
-    window.addEventListener('resize', setPixels);
-  </script>
-  
   <div class="beta-tron">
     <img src="{{STATIC_URL}}img/logo_white.png" class="img-responsive logo" alt="ToTroops">
     <h3 class="text-center beta-tron-text">Personalized care packages for troops at home and abroad</h3>
@@ -39,7 +20,7 @@
             <div class="row">
               <div class="col-xs-6 step">
                 <div class="step-icon">
-                  <img src="{{STATIC_URL}}img/package_white.png" class="img-responsive" alt="Select a package">
+                  <img src="{{STATIC_URL}}img/package_white.png" class="img-responsive center-block" alt="Select a package">
                   <i class="circle-number">1</i>
                 </div>
                 <h4 class="step-label">Select a package</h4>
@@ -70,7 +51,7 @@
           </div>
         </div>
       </div> <!-- / div.how-it-works -->
-      
+
     </div> <!-- / div.col-md-height -->
 
     <div class="col-md-6 col-md-height blue-bg-md col-top">
@@ -78,16 +59,16 @@
       <div class="product-description">
         <div class="ribbon">
           <div class="bk l">
-            <div class="arrow top"></div> 
+            <div class="arrow top"></div>
             <div class="arrow bottom"></div>
           </div>
           <div class="ribbon-skew l"></div>
           <div class="ribbon-text">
-            <div>Send a little piece of home in time for the holidays!</div>   
+            <div>Send a little piece of home in time for the holidays!</div>
           </div>
           <div class="ribbon-skew r"></div>
           <div class="bk r">
-            <div class="arrow top"></div> 
+            <div class="arrow top"></div>
             <div class="arrow bottom"></div>
           </div>
         </div>
@@ -115,7 +96,7 @@
               <div class="form-group center">
                 <label class="sr-only" for="input_email">Email address</label>
                 <div class="input-group input-group-lg">
-                  <input type="email" class="form-control" id="input_email" name="email" placeholder="Email address">
+                  <input type="email" class="form-control" id="input_email" name="email" placeholder="Email address" required>
                   <span class="input-group-btn">
                     <button type="submit" class="btn btn-green" action="submit">Sign up!</button>
                   </span>
